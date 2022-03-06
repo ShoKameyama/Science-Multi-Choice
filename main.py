@@ -18,7 +18,7 @@ Welcome to the science quiz!
 print('')
 
 while True:
-  rules = input('Rules? y/n : ')
+  rules = input('Rules? type "y" for yes and "n" for no : ')
   if rules == 'y':
     print("""
 *********************************************************************************************
@@ -61,6 +61,3 @@ while True:
 
 print('')
 
-#Question 1
-print("What is the centre of an atom called?")
-answer_1 = input()
