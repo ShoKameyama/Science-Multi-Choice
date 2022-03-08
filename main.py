@@ -29,6 +29,7 @@ while True:
                 the electron configuration of the elements.
                               Pretty simple.
                             Press "y" to start.
+                                
                                 GOOD LUCK!
 
 ************************************************************************
@@ -83,6 +84,15 @@ else:
 
 question_3 = input("What is the charge on an electron?\n\n        a)Positive \n        b)Neutral \n        c)Negative \n        d)Other \n\nAnswer : ")
 if question_3.lower() == 'c' or question_3.lower() == 'negative':
+  print("""                              *-*-*-*-*-*
+                                Correct!
+                              *-*-*-*-*-*
+""")
+else:
+  print('\nIncorrect!\n') 
+
+question_4 = input("Which of the three sub-atomic particles is the lightest?\n\n        a)Protons \n        b)Electrons \n        c)Neutrons \n        d)They are the same! \n\nAnswer : ")
+if question_4.lower() == 'b' or question_4.lower() == 'electrons' or question_4.lower() == 'electron':
   print("""                              *-*-*-*-*-*
                                 Correct!
                               *-*-*-*-*-*
