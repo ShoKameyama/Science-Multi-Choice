@@ -70,15 +70,9 @@ if question_1.lower() == 'a' or question_1.lower() == 'nucleus':
                                 Correct!
                               *-*-*-*-*-*
 """)
-elif question_1.lower() == 'b' or 'c' or 'd' or 'protons' or 'electrons' or 'neutrons' or 'proton' or 'electron' or 'neutron':
-  print('\nIncorrect!\n')
 else:
-  print("""
-------------------------------------------------------------------------
-            Input is not valid. Please enter a valid answer.
-------------------------------------------------------------------------
-""")
-
+  print('\nIncorrect!\n')
+  
 question_2 = input("Where are the electrons located in the atom?\n\n        a)outside \n        b)inside \n\nAnswer : ")
 if question_2.lower() == 'a' or question_2.lower() == 'outside':
   print("""                              *-*-*-*-*-*
@@ -105,3 +99,13 @@ if question_4.lower() == 'b' or question_4.lower() == 'electrons' or question_4.
 """)
 else:
   print('\nIncorrect!\n') 
+
+question_5 = input("Electron configuration of a 'Lithium Atom'?\n\n        a)2,8 \n        b)2,3 \n        c)2,7 \n        d)2,1 \n\nAnswer : ")
+if question_5.lower() == 'd' or question_5 == '2,7' or question_5 == '2 7':
+  print("""                              *-*-*-*-*-*
+                                Correct!
+                              *-*-*-*-*-*
+""")
+else:
+  print('\nIncorrect!\n')
+
