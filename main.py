@@ -71,3 +71,10 @@ if question_1.lower() == 'a' or question_1.lower() == 'Nucleus':
 else:
   print('\nIncorrect!\n')
 
+question_2 = input("Where are the electrons located in the atom?\n\n        a)outside \n        b)inside \n\nAnswer : ")
+if question_2.lower() == 'a' or question_2.lower() == 'outside':
+  print("""                              *-*-*-*-*-*
+                                Correct!
+                              *-*-*-*-*-*""")
+else:
+  print('\nIncorrect!\n')
