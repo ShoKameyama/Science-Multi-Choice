@@ -64,10 +64,11 @@ print('')
 
 
 question_1 = input("What is the center of an atom called?\n\n        a)Nucleus \n        b)Protons \n        c)Electrons \n        d)Neutrons \n\nAnswer : ")
-if question_1.lower() == 'a' or question_1.lower() == 'Nucleus':
+if question_1.lower() == 'a' or question_1.lower() == 'nucleus':
   print("""                              *-*-*-*-*-*
                                 Correct!
-                              *-*-*-*-*-*""")
+                              *-*-*-*-*-*
+""")
 else:
   print('\nIncorrect!\n')
 
@@ -75,6 +76,16 @@ question_2 = input("Where are the electrons located in the atom?\n\n        a)ou
 if question_2.lower() == 'a' or question_2.lower() == 'outside':
   print("""                              *-*-*-*-*-*
                                 Correct!
-                              *-*-*-*-*-*""")
+                              *-*-*-*-*-*
+""")
 else:
   print('\nIncorrect!\n')
+
+question_3 = input("What is the charge on an electron?\n\n        a)Positive \n        b)Neutral \n        c)Negative \n        d)Other \n\nAnswer : ")
+if question_3.lower() == 'c' or question_3.lower() == 'negative':
+  print("""                              *-*-*-*-*-*
+                                Correct!
+                              *-*-*-*-*-*
+""")
+else:
+  print('\nIncorrect!\n') 
