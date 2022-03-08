@@ -70,8 +70,14 @@ if question_1.lower() == 'a' or question_1.lower() == 'nucleus':
                                 Correct!
                               *-*-*-*-*-*
 """)
-else:
+elif question_1.lower() == 'b' or 'c' or 'd' or 'protons' or 'electrons' or 'neutrons' or 'proton' or 'electron' or 'neutron':
   print('\nIncorrect!\n')
+else:
+  print("""
+------------------------------------------------------------------------
+            Input is not valid. Please enter a valid answer.
+------------------------------------------------------------------------
+""")
 
 question_2 = input("Where are the electrons located in the atom?\n\n        a)outside \n        b)inside \n\nAnswer : ")
 if question_2.lower() == 'a' or question_2.lower() == 'outside':
