@@ -8,9 +8,9 @@ Welcome to the science quiz!
       break
     else:
       print("""
----------------------------------------------------------------------------------------------
-              Input is not valid. Please enter your name in alphabets only.
----------------------------------------------------------------------------------------------
+------------------------------------------------------------------------
+      Input is not valid. Please enter your name in alphabets only.
+------------------------------------------------------------------------
 """)
   except:
     continue
@@ -21,16 +21,17 @@ while True:
   rules = input('Rules? type "y" for yes and "n" for no : ')
   if rules == 'y':
     print("""
-*********************************************************************************************
+************************************************************************
           
-            This quiz requires you to input the answers of the questions given.
-                        Try to answer all questions correctly.
-            All questions will be about the atomic structure and the electron                                               configuration of elements.
-                                      Pretty simple.
-                            
-                                        GOOD LUCK!
+    This quiz requires you to input the answers of the questions given.
+                  Try to answer all questions correctly.
+          All questions will be about the atomic structure and
+                the electron configuration of the elements.
+                              Pretty simple.
+                            Press "y" to start.
+                                GOOD LUCK!
 
-*********************************************************************************************
+************************************************************************
 """)
     break
   elif rules == 'n':
@@ -38,26 +39,35 @@ while True:
     break
   else:
     print("""
----------------------------------------------------------------------------------------------
-                      Input is not valid. Please enter y or n.
----------------------------------------------------------------------------------------------
+------------------------------------------------------------------------
+                Input is not valid. Please enter y or n.
+------------------------------------------------------------------------
 """)
     continue
 
 print('')
 
 while True:
-  start = input('Start = y : ')
+  start = input('Start : ')
   if start == 'y':
     print('')
     break
   else:
     print("""
----------------------------------------------------------------------------------------------
-                    Input is not valid. Please enter 'y' to start.
----------------------------------------------------------------------------------------------
+------------------------------------------------------------------------
+            Input is not valid. Please enter 'y' to start.
+------------------------------------------------------------------------
 """)
     continue
 
 print('')
+
+
+question_1 = input("What is the center of an atom called?\n\n        a)Nucleus \n        b)Protons \n        c)Electrons \n        d)Neutrons \n\nAnswer : ")
+if question_1.lower() == 'a' or question_1.lower() == 'Nucleus':
+  print("""                              *-*-*-*-*-*
+                                Correct!
+                              *-*-*-*-*-*""")
+else:
+  print('\nIncorrect!\n')
 
