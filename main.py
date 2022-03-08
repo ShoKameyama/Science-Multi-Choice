@@ -108,3 +108,11 @@ if question_5.lower() == 'd' or question_5 == '2,1' or question_5 == '2 1':
 else:
   print('\nIncorrect!\nThere are 3 electrons in a lithium atom')
 
+question_6 = input("What is the eletron configuration of a 'Neon Atom'?\n\n        a)2,9 \n        b)2,8,8 \n        c)2,8 \n        d)2,8,8,2 \n\nAnswer : ")
+if question_6.lower() == 'c' or question_6.lower() == '2,8' or question_6.lower() == '2 8':
+  print("""                              *-*-*-*-*-*
+                                Correct!
+                              *-*-*-*-*-*
+""")
+else:
+  print('\nIncorrect!\nThere are 10 electrons in a Neon atom')
