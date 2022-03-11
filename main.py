@@ -207,6 +207,17 @@ if question_13.lower() == 'c' or question_13.lower() == 'velocity':
 else:
   print('\nIncorrect!\n\nThe rate is velocity\n\n')
 
+question_14 = input("What is the rate at which speed changes called?\n\n        a)Mass \n        b)Distance \n        c)Friction \n        d)Acceleretion")
+if question_14.lower() == 'd' or question_14.lower() == 'acceleration':
+  print("""                              *-*-*-*-*-*
+                                Correct!
+                              *-*-*-*-*-*
+""")
+  x = x + 1
+else:
+  print('\nIncorrect!\n\nThe rate is acceleration\n\n')
+  
+
 #Total Score
 score = int(x / 11 * 100)
 print(name,"you scored :",score,"%")
