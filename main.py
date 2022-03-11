@@ -28,7 +28,7 @@ while True:
           
     This quiz requires you to input the answers of the questions given.
                   Try to answer all questions correctly.
-      All questions will be about the atomic structure and the electron                       configuration of the elements.
+          Questions will be put in sections split into different                                     topics of science
     You can either input the letters of the answers or the word / number.
                               Pretty simple.
                                 
@@ -65,6 +65,12 @@ while True:
 
 print('')
 
+print("""************************************************************************
+                            Chemistry Section
+                      (Atomic Structures and ions)
+************************************************************************
+      
+      """)
 
 question_1 = input("What is the center of an atom called?\n\n        a)Nucleus \n        b)Protons \n        c)Electrons \n        d)Neutrons \n\nAnswer : ")
 if question_1.lower() == 'a' or question_1.lower() == 'nucleus':
@@ -176,6 +182,31 @@ if question_11.lower() == 'a' or question_11.lower() == 'protons' or question_11
 else:
   print('\nIncorrect!\n\nProtons have a positive charge\n\n')
 
+question_12 = input("Negatively charged ions are not called 'Anions'?\n\n        a)True \n        b)False \n\nAnswer : ")
+if question_12.lower() == 'b' or question_12.lower() == 'false':
+  print("""                              *-*-*-*-*-*
+                                Correct!
+                              *-*-*-*-*-*
+""")
+  x = x + 1
+else:
+  print('\nIncorrect!\n\nThey ARE called anions\n\n')
+
+
+print("""************************************************************************
+                            Physics Section
+************************************************************************""")
+
+question_13 = input("What is the rate that the distance is traveled in a particular direction called?\n\n        a)Distance \n        b)Mass \n        c)Velocity \n        d)Acceleration \n\nAnswer : ")
+if question_13.lower() == 'c' or question_13.lower() == 'velocity':
+  print("""                              *-*-*-*-*-*
+                                Correct!
+                              *-*-*-*-*-*
+""")
+  x = x + 1
+else:
+  print('\nIncorrect!\n\nThe rate is velocity\n\n')
+
 #Total Score
-score = int(x / 10 * 100)
+score = int(x / 11 * 100)
 print(name,"you scored :",score,"%")
