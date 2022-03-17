@@ -110,7 +110,7 @@ if question_4.lower() == 'b' or question_4.lower() == 'electrons' or question_4.
 """)
   x = x + 1
 else:
-  print('\nIncorrect!\n\nElectrons is the lightest among these sub-atomic particles\n\n') 
+  print('\nIncorrect!\n\nElectrons is the lightest\n\n') 
 
 question_5 = input("Electron configuration of a 'Lithium Atom'?\n\n        a)2,8 \n        b)2,3 \n        c)2,7 \n        d)2,1 \n\nAnswer : ")
 if question_5.lower() == 'd' or question_5 == '2,1' or question_5 == '2 1':
@@ -207,7 +207,7 @@ if question_13.lower() == 'c' or question_13.lower() == 'velocity':
 else:
   print('\nIncorrect!\n\nThe rate is velocity\n\n')
 
-question_14 = input("What is the rate at which speed changes called?\n\n        a)Mass \n        b)Distance \n        c)Friction \n        d)Acceleretion")
+question_14 = input("What is the rate at which speed changes called?\n\n        a)Mass \n        b)Distance \n        c)Friction \n        d)Acceleretion \n\nAnswer : ")
 if question_14.lower() == 'd' or question_14.lower() == 'acceleration':
   print("""                              *-*-*-*-*-*
                                 Correct!
@@ -217,7 +217,53 @@ if question_14.lower() == 'd' or question_14.lower() == 'acceleration':
 else:
   print('\nIncorrect!\n\nThe rate is acceleration\n\n')
   
+question_15 = input("What is the force due to gravity on an object called?\n\n        a)Friction \n        b)Weight \n        c)Mass \n        d)Support \n\nAnswer : ")
+if question_15.lower() == 'b' or question_15.lower() == 'weight':
+  print("""                              *-*-*-*-*-*
+                                Correct!
+                              *-*-*-*-*-*
+""")
+  x = x + 1
+else:
+  print('\nIncorrect!\n\nThe force is weight\n\n')
+  
+question_16 = input("If an object's speed is not changing, are the forces balanced?\n\n        a)True \n        b)False \n\nAnswer : ")
+if question_16.lower() == 'a' or question_16.lower() == 'true':
+  print("""                              *-*-*-*-*-*
+                                Correct!
+                              *-*-*-*-*-*
+""")
+  x = x + 1
+else:
+  print('\nIncorrect!\n\nThe forces are balanced\n\n')
 
+question_17 = input("What is the sum total of forces acting in opposite directions called?\n\n        a)Unbalanced forces \n        b)Pressure \n        c)Net force \n        d)Stationary \n\nAnswer : ")
+if question_17.lower() == 'c' or question_17.lower() == 'net force':
+  print("""                              *-*-*-*-*-*
+                                Correct!
+                              *-*-*-*-*-*
+""")
+  x = x + 1
+else:
+  print('\nIncorrect!\n\nIt is called a net force\n\n')
+  
+  
 #Total Score
-score = int(x / 11 * 100)
-print(name,"you scored :",score,"%")
+score = int(x / 17 * 100)
+print(name,"you scored : ",score,"%")
+
+#Restart Program
+# restart = input("Restart? y/n : ")
+# if restart.lower() == y:
+while True:
+  # main program
+  while True:
+      answer = str(input('Run again? (y/n): '))
+      if answer in ('y', 'n'):
+          break
+      print("invalid input.")
+  if answer == 'y':
+      continue
+  else:
+      print("Goodbye")
+      break
