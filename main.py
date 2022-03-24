@@ -4,7 +4,7 @@ score = x
 while True:
   try:
     name = input('Input name : ')
-    if name.isalpha() == True:
+    name.isalpha() == True:
       print("""
 Welcome to the science quiz!
             """)
