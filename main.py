@@ -9,14 +9,12 @@ while True:
 Welcome to the science quiz!
             """)
       break
-    else:
-      print("""
+  except ValueError:
+    print("""
 ------------------------------------------------------------------------
       Input is not valid. Please enter your name in alphabets only.
 ------------------------------------------------------------------------
 """)
-  except:
-    continue
 
 print('')
 
@@ -113,7 +111,7 @@ if question_4.lower() == 'b' or question_4.lower() == 'electrons' or question_4.
 else:
   print('\nIncorrect!\n\nElectrons is the lightest\n\n') 
 
-question_5 = input("Electron configuration of a 'Lithium Atom'?\n\n        a)2,8 \n        b)2,3 \n        c)2,7 \n        d)2,1 \n\nAnswer : ")
+question_5 = input("Electron arrangement of a 'Lithium Atom'?\n\n        a)2,8 \n        b)2,3 \n        c)2,7 \n        d)2,1 \n\nAnswer : ")
 if question_5.lower() == 'd' or question_5 == '2,1' or question_5 == '2 1':
   print("""                              *-*-*-*-*-*
                                 Correct!
@@ -123,7 +121,7 @@ if question_5.lower() == 'd' or question_5 == '2,1' or question_5 == '2 1':
 else:
   print('\nIncorrect!\n\nThere are 3 electrons in a lithium atom\n\n')
 
-question_6 = input("What is the eletron configuration of a 'Neon Atom'?\n\n        a)2,9 \n        b)2,8,8 \n        c)2,8 \n        d)2,8,8,2 \n\nAnswer : ")
+question_6 = input("What is the eletron arrangement of a 'Neon Atom'?\n\n        a)2,9 \n        b)2,8,8 \n        c)2,8 \n        d)2,8,8,2 \n\nAnswer : ")
 if question_6.lower() == 'c' or question_6 == '2,8' or question_6 == '2 8':
   print("""                              *-*-*-*-*-*
                                 Correct!
@@ -133,7 +131,7 @@ if question_6.lower() == 'c' or question_6 == '2,8' or question_6 == '2 8':
 else:
   print('\nIncorrect!\n\nThere are 10 electrons in a neon atom\n\n')
 
-question_7 = input("What is the electron configuration of an 'Argon Atom'?\n\n        a)2,6 \n        b)2,8,8 \n        c)2,8,8,1 \n        d)2,8,7 \n\nAnswer : ")
+question_7 = input("What is the electron arrangement of an 'Argon Atom'?\n\n        a)2,6 \n        b)2,8,8 \n        c)2,8,8,1 \n        d)2,8,7 \n\nAnswer : ")
 if question_7.lower() == 'b' or question_7 == '2,8,8' or question_7 == '2 8 8':
   print("""                              *-*-*-*-*-*
                                 Correct!
@@ -247,9 +245,19 @@ if question_17.lower() == 'c' or question_17.lower() == 'net force':
   x = x + 1
 else:
   print('\nIncorrect!\n\nIt is called a net force\n\n')
+
+question_18 = input("What is the force that opposes motion called?\n\n        a)Unbalanced forces \n        b)Net force \n        c)Weight \n        d)Friction \n\nAnswer : ")
+if question_18.lower() == 'd' or question_18.lower() == 'friction':
+  print("""                              *-*-*-*-*-*
+                                Correct!
+                              *-*-*-*-*-*
+""")
+  x = x + 1
+else:
+  print('\nIncorrect!\n\nIt is called friction\n\n')
   
-question_18 = input("What is friction acting on an object due to air particles called?\n\n        a)Friction \n        b)Air resistance \n        c)Weight \n        d)Pressure \n\nAnswer : ")
-if question_18.lower() == 'b' or question_18.lower() == 'air resistance':
+question_19 = input("What is friction acting on an object due to air particles called?\n\n        a)Friction \n        b)Air resistance \n        c)Weight \n        d)Pressure \n\nAnswer : ")
+if question_19.lower() == 'b' or question_19.lower() == 'air resistance':
   print("""                              *-*-*-*-*-*
                                 Correct!
                               *-*-*-*-*-*
@@ -258,9 +266,10 @@ if question_18.lower() == 'b' or question_18.lower() == 'air resistance':
 else:
   print('\nIncorect!\n\nIt is called air resistance\n\n')
 
-
+question_20 = input("")
   
 #Total Score
-score = int(x / 18 * 100)
+score = int(x / 19 * 100)
 print(name,"you scored : ",score,"%")
 
+#Restart
